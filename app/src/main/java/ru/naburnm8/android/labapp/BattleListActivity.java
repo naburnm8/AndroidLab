@@ -1,6 +1,8 @@
 package ru.naburnm8.android.labapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,11 +19,19 @@ import java.util.Random;
 public class BattleListActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     BattleAdapter battleAdapter;
+    Button calculator, profile, players;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bauman_menu);
         recyclerView = findViewById(R.id.list1);
+        calculator = findViewById(R.id.calculator);
+        profile = findViewById(R.id.viewProfile);
+        players = findViewById(R.id.viewPlayers);
+        profile.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ProfileActivity.class);
+            startActivity(intent);
+        });
         ArrayList<BattleData> battleData = fillData();
         battleAdapter = new BattleAdapter(this, battleData);
         recyclerView.setAdapter(battleAdapter);

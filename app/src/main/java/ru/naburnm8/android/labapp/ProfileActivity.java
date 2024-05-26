@@ -28,7 +28,7 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (data == null){ return; }
+        if (data == null){ return;}
         user = (UserData) data.getSerializableExtra("user");
         nickname.setText(user.getNickname());
         dateOfRegistration.setText(user.getDateOfRegistration());
