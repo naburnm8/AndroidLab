@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <TextView
+            android:text="Player1"
+            android:layout_width="137dp"
+            android:layout_height="57dp"
+            android:id="@+id/player1FULL"
+            android:textSize="20sp"
+            android:textAlignment="viewStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:text="Player2"
+            android:layout_width="140dp"
+            android:layout_height="56dp"
+            android:id="@+id/player2FULL"
+            android:textSize="20sp"
+            android:textAlignment="viewEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="32dp"
+            android:textStyle="bold"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_begin="205dp"
+            android:id="@+id/guideline"
+            android:layout_marginEnd="206dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+            android:text="map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mapFULL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/label1"/>
+
+    <TextView
+            android:text="date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateFULL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0.498"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/label1"/>
+
+    <TextView
+            android:text="Turns elapsed: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="96dp"/>
+
+    <TextView
+            android:text="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/turnsFULL"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/label1"
+            app:layout_constraintTop_toTopOf="@+id/label1"/>
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="135dp"
+            android:layout_height="250dp"
+            android:id="@+id/player1InventoryFULL"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="viewStart"/>
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="135dp"
+            android:layout_height="250dp"
+            android:id="@+id/player2InventoryFULL"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            android:textAlignment="viewEnd"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
