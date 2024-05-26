@@ -44,7 +44,14 @@ public class LoginActivity extends AppCompatActivity {
             finish();
         });
     }
-    protected ArrayList<UserData> getRegisteredUsers() {
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(this, BattleListActivity.class);
+        startActivity(intent);
+        finish();
+    }
+    public static ArrayList<UserData> getRegisteredUsers() {
         ArrayList<UserData> registeredUsers = new ArrayList<>();
         registeredUsers.add(new UserData("naburnm8", "01-01-2004", "70%", "Archer"));
         registeredUsers.add(new UserData("gigoao", "01-01-2004", "75%", "Mounted"));

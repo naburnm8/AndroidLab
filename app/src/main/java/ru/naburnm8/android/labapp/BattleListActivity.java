@@ -32,6 +32,10 @@ public class BattleListActivity extends AppCompatActivity {
             Intent intent = new Intent(this, ProfileActivity.class);
             startActivity(intent);
         });
+        players.setOnClickListener(view -> {
+            Intent intent = new Intent(this, PlayersListActivity.class);
+            startActivity(intent);
+        });
         ArrayList<BattleData> battleData = fillData();
         battleAdapter = new BattleAdapter(this, battleData);
         recyclerView.setAdapter(battleAdapter);
