@@ -24,6 +24,13 @@
         </activity>
         <activity android:name=".BattleListActivity"/>
         <activity android:name=".BattleActivity"/>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".CalculatorActivity"/>
+        <activity android:name=".PlayersListActivity"/>
+        <activity android:name=".PlayerActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".NewsActivity"/>
+        <activity android:name=".CreateNewsActivity"/>
     </application>
 
 </manifest>
