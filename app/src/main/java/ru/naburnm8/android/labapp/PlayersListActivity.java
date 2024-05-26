@@ -3,6 +3,8 @@ package ru.naburnm8.android.labapp;
 import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import ru.naburnm8.android.labapp.adapter.PlayerAdapter;
@@ -27,5 +29,20 @@ public class PlayersListActivity extends AppCompatActivity {
         adapter = new PlayerAdapter(this, playerData);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        sortNickname.setOnClickListener(view -> {
+            adapter.Sort("name");
+            recyclerView.setAdapter(null);
+            recyclerView.setAdapter(adapter);
+        });
+        sortWin.setOnClickListener(view -> {
+            adapter.Sort("win");
+            recyclerView.setAdapter(null);
+            recyclerView.setAdapter(adapter);
+        });
+        sortDate.setOnClickListener(view -> {
+            adapter.Sort("date");
+            recyclerView.setAdapter(null);
+            recyclerView.setAdapter(adapter);
+        });
     }
 }

@@ -53,11 +53,11 @@ public class LoginActivity extends AppCompatActivity {
     }
     public static ArrayList<UserData> getRegisteredUsers() {
         ArrayList<UserData> registeredUsers = new ArrayList<>();
-        registeredUsers.add(new UserData("naburnm8", "01-01-2004", "70%", "Archer"));
-        registeredUsers.add(new UserData("gigoao", "01-01-2004", "75%", "Mounted"));
-        registeredUsers.add(new UserData("barlamey", "01-01-2004", "90%", "Infantry"));
+        registeredUsers.add(new UserData("naburnm8", "02-01-2004", "70%", "Archer"));
+        registeredUsers.add(new UserData("gigoao", "01-05-2004", "75%", "Mounted"));
+        registeredUsers.add(new UserData("barlamey", "22-01-2004", "90%", "Infantry"));
         registeredUsers.add(new UserData("ZOV LIKVIDIROVAN", "01-01-2004", "30%", "Custom unit"));
-        registeredUsers.add(new UserData("80085", "01-01-2004", "50%", "Custom unit"));
+        registeredUsers.add(new UserData("80085", "01-06-2004", "50%", "Custom unit"));
         return registeredUsers;
     }
     protected boolean isRegistered(String username) {
