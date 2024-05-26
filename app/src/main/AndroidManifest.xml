@@ -30,6 +30,7 @@
         <activity android:name=".LoginActivity"/>
         <activity android:name=".NewsActivity"/>
         <activity android:name=".CreateNewsActivity"/>
+        <activity android:name=".AddUnitActivity"/>
     </application>
 
 </manifest>
