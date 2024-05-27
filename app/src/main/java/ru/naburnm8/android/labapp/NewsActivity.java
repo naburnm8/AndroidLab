@@ -42,7 +42,7 @@ public class NewsActivity extends AppCompatActivity{
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        NewsData recieved = (NewsData) data.getSerializableExtra("data");
+        NewsData recieved = (NewsData) data.getSerializableExtra("news");
         newsData.add(recieved);
         adapter.notifyDataSetChanged();
     }

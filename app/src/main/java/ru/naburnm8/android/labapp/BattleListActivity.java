@@ -51,6 +51,12 @@ public class BattleListActivity extends AppCompatActivity {
         });
 
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finishAffinity();
+        System.exit(0);
+    }
     protected ArrayList<BattleData> fillData() {
         ArrayList<BattleData> data = new ArrayList<>();
         data.add(new BattleData("naburnm8", "gigoao", "01-02-2004 00:31 - 01-02-2004 00:59", getInventory(getUnits("1")), getInventory(getUnits("1")), "map1", "10"));

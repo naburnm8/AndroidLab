@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import org.jetbrains.annotations.NotNull;
+import ru.naburnm8.android.labapp.CreateNewsActivity;
 import ru.naburnm8.android.labapp.R;
 import ru.naburnm8.android.labapp.data.PictureData;
 import ru.naburnm8.android.labapp.viewholder.PictureViewHolder;
@@ -37,10 +38,19 @@ public class PictureAdapter extends RecyclerView.Adapter<PictureViewHolder>{
         String name = pictures.get(position).getPictureName();
         holder.pictureImage.setImageResource(pictureID);
         holder.pictureName.setText(name);
+        int index = holder.getAdapterPosition();
+        holder.pictureView.setOnClickListener(view -> {
+            handleClick(index);
+        });
     }
 
     @Override
     public int getItemCount() {
         return pictures.size();
+    }
+    private void handleClick(int index) {
+        PictureData picture = pictures.get(index);
+        CreateNewsActivity createNewsActivity = (CreateNewsActivity) context;
+        createNewsActivity.setChosenPicture(picture.getPictureID());
     }
 }
