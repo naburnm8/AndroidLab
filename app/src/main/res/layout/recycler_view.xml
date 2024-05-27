@@ -58,5 +58,15 @@
             android:layout_alignParentTop="true"
             android:textAlignment="viewEnd"/>
 
+    <ImageView
+            android:layout_width="42dp"
+            android:layout_height="37dp"
+            app:srcCompat="@drawable/crown"
+            android:id="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="360dp"/>
+
 
 </RelativeLayout>
