@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             finish();
             System.exit(0);
         });
-        textView = findViewById(R.id.textView);
+        textView = findViewById(R.id.privacyString);
         textView.setOnClickListener(view -> {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/naburnm8/BaumansGate"));
             startActivity(intent);
