@@ -65,7 +65,7 @@ public class AddUnitActivity extends AppCompatActivity {
         });
         imageBog.setOnClickListener(view -> {
 
-        })
+        });
     }
     protected String getUnitsString(ArrayList<Unit> units){
         String out = "";
