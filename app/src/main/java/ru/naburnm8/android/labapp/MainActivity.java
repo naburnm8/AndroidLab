@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         });
         textView = findViewById(R.id.textView);
         textView.setOnClickListener(view -> {
-            Intent intent = new Intent(Intent.ACTION_MAIN, Uri.parse("https://github.com/naburnm8/BaumansGate"));
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/naburnm8/BaumansGate"));
             startActivity(intent);
         });
         imageView = findViewById(R.id.mainpic);

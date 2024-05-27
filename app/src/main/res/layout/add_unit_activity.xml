@@ -24,113 +24,120 @@
             android:id="@+id/doneButton"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="32dp"/>
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="92dp"/>
 
     <Switch
-            android:text="Player1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
             android:id="@+id/playerSwitch"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="32dp"
-            android:layout_marginStart="32dp"/>
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="8dp"
+            android:textSize="20sp"/>
 
     <Button
             android:text="Swordman"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="89dp"
+            android:layout_height="48dp"
             android:id="@+id/swordman"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="392dp"
-            android:layout_marginStart="24dp"/>
-
-    <Button
-            android:text="Longbow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/longbow"
-            app:layout_constraintStart_toEndOf="@+id/swordman"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="392dp"
-            android:layout_marginStart="28dp"/>
+            app:layout_constraintEnd_toStartOf="@+id/crossbow"
+            android:layout_marginEnd="24dp"
+            android:textSize="8sp"/>
 
     <Button
             android:text="Knight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="89dp"
+            android:layout_height="48dp"
             android:id="@+id/knight"
-            app:layout_constraintStart_toEndOf="@+id/longbow"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="392dp"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="24dp"
-            app:layout_constraintHorizontal_bias="1.0"/>
+            android:textSize="10sp"/>
 
     <Button
             android:text="Spearman"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="89dp"
+            android:layout_height="48dp"
             android:id="@+id/spearman"
             app:layout_constraintTop_toBottomOf="@+id/swordman"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"/>
-
-    <Button
-            android:text="Shortbow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/shortbow"
-            app:layout_constraintStart_toEndOf="@+id/spearman"
-            app:layout_constraintTop_toBottomOf="@+id/longbow"
+            android:layout_marginStart="72dp"
             android:layout_marginTop="16dp"
-            android:layout_marginStart="12dp"/>
+            android:textSize="8sp"/>
 
     <Button
             android:text="Cuirassier"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="89dp"
+            android:layout_height="48dp"
             android:id="@+id/cuirrasier"
-            app:layout_constraintStart_toEndOf="@+id/shortbow"
             app:layout_constraintTop_toBottomOf="@+id/knight"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            android:layout_marginEnd="24dp"/>
+            android:layout_marginEnd="24dp"
+            android:textSize="8sp"/>
 
     <Button
             android:text="Hatchetman"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="89dp"
+            android:layout_height="48dp"
             android:id="@+id/hatchetman"
-            tools:layout_editor_absoluteX="24dp"
             app:layout_constraintTop_toBottomOf="@+id/spearman"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/longbow"
+            android:layout_marginEnd="24dp"
+            android:textSize="10sp"/>
+
+    <Button
+            android:text="Longbow"
+            android:layout_width="89dp"
+            android:layout_height="48dp"
+            android:id="@+id/longbow"
+            app:layout_constraintEnd_toStartOf="@+id/mountedArcher"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/shortbow"
+            android:layout_marginTop="16dp"
+            android:textSize="8sp"/>
 
     <Button
             android:text="Crossbow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="89dp"
+            android:layout_height="48dp"
             android:id="@+id/crossbow"
-            app:layout_constraintStart_toEndOf="@+id/hatchetman"
-            app:layout_constraintTop_toBottomOf="@+id/shortbow"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="136dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="392dp"
+            android:textSize="8sp"/>
+
+    <Button
+            android:text="Shortbow"
+            android:layout_width="89dp"
+            android:layout_height="48dp"
+            android:id="@+id/shortbow"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="136dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="224dp"
+            app:layout_constraintTop_toBottomOf="@+id/crossbow"
             android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"/>
+            app:layout_constraintVertical_bias="0.0"
+            android:textSize="8sp"/>
 
     <Button
             android:text="Archer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="89dp"
+            android:layout_height="48dp"
             android:id="@+id/mountedArcher"
             app:layout_constraintTop_toBottomOf="@+id/cuirrasier"
-            app:layout_constraintStart_toEndOf="@+id/crossbow"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="24dp"
-            app:layout_constraintHorizontal_bias="1.0"/>
+            android:textSize="10sp"/>
 
     <TextView
             android:text="Infantry"
@@ -140,7 +147,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="356dp"
-            android:layout_marginStart="56dp"/>
+            android:layout_marginStart="92dp"/>
 
     <TextView
             android:text="Archer"
@@ -149,7 +156,7 @@
             android:id="@+id/textView13"
             app:layout_constraintBottom_toBottomOf="@+id/textView12"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="168dp"/>
+            android:layout_marginEnd="160dp"/>
 
     <TextView
             android:text="Mounted"
@@ -159,4 +166,26 @@
             app:layout_constraintBottom_toBottomOf="@+id/textView13"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="40dp"/>
+
+    <Button
+            android:text="Clear selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clearButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="92dp"
+            app:layout_constraintHorizontal_bias="0.268"/>
+
+    <ImageView
+            android:layout_width="56dp"
+            android:layout_height="247dp"
+            app:srcCompat="@drawable/bogustidno"
+            android:id="@+id/imageBog"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="348dp"
+            android:layout_marginBottom="92dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
