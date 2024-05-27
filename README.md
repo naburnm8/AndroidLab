@@ -18,7 +18,7 @@ view-элементами, их взаимодействии друг с дру�
 Для успешного запуска проекта потребуется:
 
 - IntelliJ IDEA Ultimate или Android Studio
-- Java и Android SDK (Android Plugin для IntelliJ)
+- Java и Android SDK (Плагин Android для IntelliJ)
 - Файл local.properties в корне проекта который должен содержать путь к Android SDK home.
 
 Пример заполнения local.properties:
@@ -28,7 +28,7 @@ view-элементами, их взаимодействии друг с дру�
 sdk.dir=C\:\\Users\\[ваш пользователь]\\AppData\\Local\\Android\\Sdk
 ```
 
--macOS
+- macOS
 ```
 sdk.dir=/Users/admin/Library/Android/sdk
 ```
