@@ -19,7 +19,7 @@ import java.util.Random;
 public class BattleListActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     BattleAdapter battleAdapter;
-    Button calculator, profile, players;
+    Button calculator, profile, players, news;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +44,11 @@ public class BattleListActivity extends AppCompatActivity {
         battleAdapter = new BattleAdapter(this, battleData);
         recyclerView.setAdapter(battleAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        news = findViewById(R.id.news);
+        news.setOnClickListener(view -> {
+            Intent intent = new Intent(this, NewsActivity.class);
+            startActivity(intent);
+        });
 
     }
     protected ArrayList<BattleData> fillData() {

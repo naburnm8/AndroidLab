@@ -12,8 +12,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class CalculatorActivity extends AppCompatActivity {
-    ArrayList<Unit> player1Units;
-    ArrayList<Unit> player2Units;
+    ArrayList<Unit> player1Units = new ArrayList<>();
+    ArrayList<Unit> player2Units = new ArrayList<>();
     TextView player1Text, player2Text, outcome;
     Button addUnitsButton, calculateButton;
 

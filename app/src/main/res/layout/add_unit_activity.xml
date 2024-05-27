@@ -35,7 +35,8 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginBottom="16dp"
             android:layout_marginStart="8dp"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:text="Player selection"/>
 
     <Button
             android:text="Swordman"
