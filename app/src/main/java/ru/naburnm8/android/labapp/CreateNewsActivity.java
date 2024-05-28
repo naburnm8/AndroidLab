@@ -67,6 +67,7 @@ public class CreateNewsActivity extends AppCompatActivity {
         pictures.add(new PictureData(R.drawable.bogustidno, "Богу стыдно"));
         pictures.add(new PictureData(R.drawable.vivovskoe, "Вивовское"));
         pictures.add(new PictureData(R.drawable.perestatzanimatsa, "Что там написано?"));
+        pictures.add(new PictureData(R.drawable.letchik, "Летчик"));
         return pictures;
     }
     protected void getPosterNick() {

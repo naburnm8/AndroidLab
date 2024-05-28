@@ -55,7 +55,9 @@
                 android:layout_height="300dp"
                 android:hint="Content"
                 android:textAlignment="textStart"
-                android:id="@+id/contentInputField"/>
+                android:id="@+id/contentInputField"
+                android:inputType="text|textMultiLine"
+                />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.recyclerview.widget.RecyclerView
