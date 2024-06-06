@@ -61,4 +61,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="160dp"
             android:layout_marginBottom="36dp"/>
+
+    <Switch
+            android:text="Theme Switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/themeSwitch"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="48dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

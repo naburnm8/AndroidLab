@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.LabApp" parent="Base.Theme.LabApp"/>
+    <style name="SwitchableTheme" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/lightBlue</item>
+        <item name="colorPrimaryDark">@color/lightBlue</item>
+    </style>
 </resources>
